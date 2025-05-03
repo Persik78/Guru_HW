@@ -1,2 +1,2 @@
-with open('tmp/hello1', 'x') as file:
-    file.write('\nHello World\a')
+with open('tmp/hello3', 'r') as file:
+    print(file.read())

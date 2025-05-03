@@ -1,3 +1,4 @@
-from zipfile import ZipFile, ZIP_STORED
+from zipfile import ZipFile
 
-ZipFile('tmp/test_zip.zip','x', compression=ZIP_STORED)
+with ZipFile('tmp/test_archive.zip') as zip_file:
+    print(zip_file.namelist())
